@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chalenges</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script src="static/js/script.js"></script>
+  </head>
+  <body>
+    <div class="container-1">
+      <h1>Age in days</h1>
+      <div class="felx-box-container-1">
+        <div>
+          <button class="btn btn-primary" onclick="ageInDays()">
+            Click Me
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="flex-box-container-1">
+        <div id="flex-box-result">
+          <h1 id="ages"></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-1">
+      <h1>Rock Paper Scissor</h1>
+      <div class="felx-box-container-1" id="flex-box-rps-div">
+        <img id="rock" src="static/image/rock.png" alt="rock" onclick="rps(1)"/>
+
+        <img id="paper" src="static/image/paper.png" alt="paper" onclick="rps(2)"/>
+
+        <img id="scissor" src="static/image/scissor.png" alt="scissor" onclick="rps(3)"/>
+      </div>
+      <h1 id="rpsResult"></h1>
+    </div>
+
+    <div class="container-1">
+      <h1>BlackJack</h1>
+      <h3><span id="blackjack-result">Let's Play!</span></h3>
+
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2>You : <span id="your-blackjack-result">0</span></h2>
+        </div>
+
+        <div id="dealer-box">
+          <h2>Dealer : <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+
+      </div>
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn btn-primary" id="blackjack-hit-button" onclick="blackjackHit()">Hit</button>
+          <button class="btn btn-warning" id="blackjack-stand-button" onclick="blackjackStand()">Stand</button>
+          <button class="btn btn-danger" id="blackjack-deal-button" onclick="blackjackDeal()">Deal</button>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-3">
+        <table>
+          <thead>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </thead>
+          <tbody>
+            <td><span id="wins">0</span></td>
+            <td><span id="looses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+

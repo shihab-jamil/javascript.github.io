@@ -1,0 +1,63 @@
+.container-1 {
+  border: 3px solid black;
+  margin: 50px auto;
+  padding: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.felx-box-container-1 , .flex-blackjack-row-1 , .flex-blackjack-row-2 , .flex-blackjack-row-3{
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+  
+}
+
+.flex-blackjack-row-1 , .flex-blackjack-row-2 {
+  background: url('../image/deckboard.jpg') center;
+  color: white;
+}
+
+.flex-blackjack-row-1 div{
+  border: 1px solid black;
+  height: 390px;
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+}
+
+.felx-box-container-1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.felx-box-container-1 img {
+  width: 150px;
+  margin: 5vw;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 10px 50px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  transition: 0.5s ease;
+}
+
+.felx-box-container-1 img:hover {
+  -webkit-filter: drop-shadow(0px 10px 50px green);
+  filter: drop-shadow(10px 5px 10px green);
+}
+
+table , th , td{
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.flex-blackjack-row-1 img{
+  width: 25%;
+  padding: 10px;
+}
